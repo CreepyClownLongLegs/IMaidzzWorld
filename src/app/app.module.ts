@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { PerfectScrollbarModule } from 'ngx-perfect-scrollbar';
+import { NgScrollbarModule } from 'ngx-scrollbar';
 
 @NgModule({
   declarations: [
@@ -12,7 +12,7 @@ import { PerfectScrollbarModule } from 'ngx-perfect-scrollbar';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    PerfectScrollbarModule
+    NgScrollbarModule
   ],
   providers: [],
   bootstrap: [AppComponent]

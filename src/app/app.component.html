@@ -1,66 +1,191 @@
 <!DOCTYPE html>
+<html lang="en">
 
-<html>
-<head [perfectScrollbar]="config">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-      ::-webkit-scrollbar {
-        width: 17px;
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap" rel="stylesheet">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Website :3</title>
+    <style>
+        /* Add your custom scrollbar styles here */
+        ::-webkit-scrollbar {
+            width: 17px;
         }
 
-      ::-webkit-scrollbar {
-        width: 16px;
+        ::-webkit-scrollbar {
+            width: 16px;
         }
 
-      ::-webkit-scrollbar-thumb {
-        background-position: 50%;
-        background-repeat: no-repeat;
-        background-color: #ffcce2;
-        background-size: 7px;
-        border: 1px solid #fff;
-        border-radius: 2px;
-        box-shadow: inset -3px 0 #ffbcd9, inset 1px 1px #f3adcb;
+        ::-webkit-scrollbar-corner {
+            background: #9a1e1e;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background-position: 50%;
+            background-repeat: no-repeat;
+            background-color: #ffcce2;
+            background-size: 7px;
+            border: 1px solid #fff;
+            border-radius: 2px;
+            box-shadow: inset -3px 0 #ffbcd9, inset 1px 1px #f3adcb;
         }
 
         ::-webkit-scrollbar-thumb {
             background-color: #ffbcd9;
             box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #000, inset -2px -2px grey, inset 2px 2px #dfdfdf;
         }
-  </style>
-  <title>My Website :3</title>
+
+        ::-webkit-scrollbar-track {
+            background-color: transparent;
+        }
+    </style>
+    <!-- Link to Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body>
-<div class="container-fluid" [perfectScrollbar]="config">
+    <!-- Sidebar -->
+    <div class="container-fluid mt-5 my-5">
+        <div class="row">
+            <!-- First column -->
+            <div class="col-lg-1">
 
-</div>
+              <!--item-->
+                <ul class="nav flex-column">
+                    <!-- Repeat this block for each icon -->
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                          <ul style="list-style-type: none;">
 
+                          <li style="width: max-content;">
+                            <img src="../assets/images/Win XP icons/144.ico" class="img-fluid mx-4" />
+                          </li>
+                          <li style="width: max-content;font-family: 'Pixelify Sans', sans-serif;">
+                            <i class="zmdi zmdi-view-dashboard"></i> My Projects :3
+                          <li>
+                          </ul>
+
+                        </a>
+                    </li>
+                </ul>
+
+                <!--item-->
+                <ul class="nav flex-column" style="margin-top: 4vh;">
+                    <!-- Repeat this block for each icon -->
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                          <ul style="list-style-type: none;">
+
+                          <li style="width: max-content;font-family: 'Pixelify Sans', sans-serif;">
+                            <img src="../assets/images/Win XP icons/228.ico" class="img-fluid mx-4" />
+                          </li>
+                          <li style="width: max-content; font-family: 'Pixelify Sans', sans-serif;">
+                            <i class="zmdi zmdi-view-dashboard"></i>About Me <3
+                          <li>
+                          </ul>
+
+                        </a>
+                    </li>
+                </ul>
+
+                <!--item-->
+                <ul class="nav flex-column" style="margin-top: 4vh;">
+                  <!-- Repeat this block for each icon -->
+                  <li class="nav-item">
+                      <a href="#" class="nav-link">
+                        <ul style="list-style-type: none;">
+
+                        <li style="width: max-content;font-family: 'Pixelify Sans', sans-serif;">
+                          <img src="../assets/images/Win XP icons/226.ico" class="img-fluid mx-4" />
+                        </li>
+                        <li style="width: max-content; text-align: center; font-family: 'Pixelify Sans', sans-serif;">
+                          <i class="zmdi zmdi-view-dashboard"></i> My Favourites <br> <3
+                        <li>
+                        </ul>
+
+                      </a>
+                  </li>
+              </ul>
+
+
+            </div>
+
+            <!-- Second column -->
+            <div class="col-lg-1">
+              <ul class="nav flex-column">
+                  <!-- Repeat this block for each icon -->
+                  <li class="nav-item">
+                      <a href="#" class="nav-link">
+                        <ul style="list-style-type: none;">
+                        <li style="width: max-content;font-family: 'Pixelify Sans', sans-serif;">
+                          <img src="../assets/images/Win XP icons/180.ico" class="img-fluid mx-4" />
+                        </li>
+                        <li style="width: max-content; text-align: center; font-family: 'Pixelify Sans', sans-serif;">
+                          <i class="zmdi zmdi-view-dashboard"></i> My Blog Posts <br> :D
+                        <li>
+                        </ul>
+                      </a>
+                  </li>
+              </ul>
+
+              <!--item-->
+                <ul class="nav flex-column" style="margin-top: 4vh;">
+                    <!-- Repeat this block for each icon -->
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                          <ul style="list-style-type: none;font-family: 'Pixelify Sans', sans-serif;">
+
+                          <li style="width: max-content; font-family: 'Pixelify Sans', sans-serif;">
+                            <img src="../assets/images/Win XP icons/179.ico" class="img-fluid mx-4" />
+                          </li>
+                          <li style="width: max-content;;">
+                             Send Email
+                          <li>
+                          </ul>
+
+                        </a>
+                    </li>
+                </ul>
+          </div>
+
+
+        </div>
+    </div>
+    <!-- End of sidebar -->
+
+    <!-- Your additional styles -->
+    <style>
+        body {
+            background-image: url('../assets/images/mybackgroundbitch.gif');
+            background-size: cover;
+            height: 150vh;
+            padding: 0;
+            margin: 0;
+            font-family: 'Pixelify Sans', sans-serif;
+        }
+
+        .nav a {
+            background: none;
+            font-size: 14px;
+        }
+
+        .nav a:hover {
+            background: none;
+            color: #ECEFF1;
+        }
+
+    </style>
+
+    <!-- Link to Bootstrap JS and Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://gist.github.com/averykhoo/8057a0324be445bd7eea32c89379eb76.js"></script>
 </body>
 
 </html>
-
-<style>
-
-html{
-  margin: 0%;
-  padding: 0%;
-}
-body {
-  width: 98vw;
-  height: 98vh;
-  overflow: hidden;
-  padding: 0vw;
-  margin: 0vw;
-}
-body .container-fluid{
-    overflow: hidden;
-    height: inherit;
-    width: 100vw;
-    padding: 0%;
-    margin: 0%;
-    background:url('../assets/images/mybackgroundbitch.gif') repeat 100% 100%;
-  }
-
-</style>
 
 <router-outlet></router-outlet>

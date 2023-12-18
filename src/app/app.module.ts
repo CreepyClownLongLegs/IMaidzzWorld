@@ -17,4 +17,5 @@ import { PerfectScrollbarModule } from 'ngx-perfect-scrollbar';
   providers: [],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }

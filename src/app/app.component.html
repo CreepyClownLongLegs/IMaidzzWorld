@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="overflow-x: hidden; width: 93vw;">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -47,10 +47,10 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
-<body style="cursor: url('../assets/images/Normal\ Select.cur');">
+<body style="cursor: url('../assets/images/Normal\ Select.cur'); overflow-x: hidden;">
     <!-- Sidebar -->
-    <div class="container-fluid mt-5 my-5">
-        <div class="row">
+    <div class="container-fluid mt-5 my-5" style="overflow-x: hidden;">
+        <div class="row" style="position: absolute; z-index: 3000;">
             <!-- First column -->
             <div class="col-lg-1">
 
@@ -152,18 +152,16 @@
                 </ul>
           </div>
 
-          <div class="col-lg-2">
-
-          </div>
 
           <!-- my projects <3 -->
-        <div class="col-lg-4">
-          <div class="xpwindow" style="width:auto; height: 70vh;">
+        <div id="blog_entries" style="position:absolute; width:auto; height: 70vh; margin-left: 26vw; width:35vw">
+          <div class="xpwindow" >
  
             <!-- header-->
 
-            <div class="xpwindow-header" style="width: auto; height: 3.5vh; font-family: 'Pixelify Sans', sans-serif;"> 
-              <div class="row" style="margin-left: 0.5vw; width: auto; height: auto;">
+            <div 
+             class="xpwindow-header" style="width: auto; height: 3.5vh; font-family: 'Pixelify Sans', sans-serif;"> 
+              <div class="row" style="margin-left: 0.5vw; width: auto; height: auto; position: absolute;">
                <img src="../assets/images/Win XP icons/147.ico" width="15" height="15" style="margin-top: 2px; margin-right: 5px;"/>
                <p style="margin-top: -2px;">My Projects (◕‿◕)♡ </p>
                <img src="../assets/images/minmaxcloseicons/minmaxclose.png" width="49" height="19" style="display: block; margin-left: auto;margin-right: 1vw;"/>
@@ -325,9 +323,23 @@
 
         </div>
 
-         <div class="col-lg-3 col-md-9 col-sm-9">
+        <div class="chatbox" style="position: absolute; margin-left: 66vw; margin-top: 0vh;">
+          <div 
+          class="xpwindow-header" style="width: 151%; height: 3.5vh; font-family: 'Pixelify Sans', sans-serif;"> 
+           <div class="row" style="margin-left: 1vw; width: auto; height: auto;">
+            <img src="../assets/images/Win XP icons/265.ico" width="15" height="15" style="margin-top: 0px; margin-left: -2px;"/>
+            <p style="margin-top: -2px;"> Text Me  </p>
+            <img src="../assets/images/minmaxcloseicons/minmaxclose.png" width="49" height="19" style="display: block; margin-left: auto;margin-right: 1vw;"/>
+           </div>
+         </div>
+          <iframe src="https://www5.cbox.ws/box/?boxid=949133&boxtag=FQCElK" width="150%" height="250" allowtransparency="yes" allow="autoplay" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto" style="background-image: url('../assets/images/2048x1152-aesthetic-wallpaper-nwisp6nldjw2jv3c.jpg');
+          border-radius: 10px; border: 3px rgb(255, 217, 246) dotted; border-top-left-radius:0px ; border-top-right-radius: 0px;
+          border-top:  none;"></iframe>	
+        </div>
 
-          <div class="xpwindow" style="width:auto; height: 50vh;">
+         <div style="margin-left: 66vw; width: 30vw;">
+
+          <div class="xpwindow" style="width:auto; height: 50vh;" >
  
             <!-- header-->
 
@@ -438,17 +450,44 @@
     <!-- End of sidebar -->
 
     <!--beggining of footer-->
-        <div class="xpwindow-header" style="border-radius: 0px;margin-top: -2vh;height: 6.1vh; width: 98.9vw; z-index: 3000; overflow:hidden; position: fixed; font-family: 'Pixelify Sans', sans-serif;">
+        <div class="xpwindow-header" style="border-radius: 0px;height: 6.1vh; width: 98.9vw; z-index: 300; overflow:hidden; position: fixed; font-family: 'Pixelify Sans', sans-serif; margin-top: 79vh; z-index: 3000;">
           <div class="xpwindow-start" style=";height: 6.1vh; width: 9vw; overflow:hidden;margin-top: -0.6vh; float:left;">
             <p class="mx-2" style="font-size: 25px">START</p>
           </div>
-          <div class="xpwindow-header" style="text-align: center;border-radius: 0px;height: 6.1vh; width: 10.9vw; overflow:hidden;margin-top: -0.6vh; float:right; margin-right: -0.5vw; border-top-left-radius: 5px;">
-            <p style="margin-top: 1vh;">Time: 03:00 am</p>
-          </div>
+          <div class="marquee">
+            <span>Hello and Welcome to my Website visitor :3 What dark pathways of the internet have taken you to my humble abode???</span>
+        </div>
+        
         </div>
 
     <!-- Your additional styles -->
     <style type="text/css">
+
+          /* Style for marquee text */
+    .marquee {
+        white-space: nowrap;
+        overflow: hidden;
+        position: relative;
+        color: white;
+        font-size: larger;
+        letter-spacing: 5px;
+    }
+
+    .marquee span {
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 50s linear infinite;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-120%);
+    }
+}
+
 
         body {
             background-image: url('../assets/images/mybackgroundbitch.gif');
